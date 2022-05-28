@@ -56,14 +56,14 @@ const Blog = () => {
 
   return (
     <main>
-      <Header active={"blog"} />
+      <Header active={params.typeofblog === "blog" ? "blog" : "stories"} />
       {busy ? (
         <>Loading</>
       ) : (
         <section className={styles.topdiv}>
           <div>
             {" "}
-            <h1 className={styles.heading}>Blogs</h1>
+            <h1 className={styles.heading}>{params.typeofblog === "blog" ? "Blogs" : "Stories"}</h1>
             <p className={styles.tagtext}>
               With our well-researched and educational posts explore solutions to your various
               mental, emotional, spiritual health problems, and much more!

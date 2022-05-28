@@ -46,7 +46,7 @@ const Header = ({ active }) => {
             </a>
           </div>
           <div className={styles.navigationoption}>
-            <a style={returnColor("video")} href="/video">
+            <a target="_blank" style={returnColor("video")} href="/video">
               Video Call
             </a>
           </div>

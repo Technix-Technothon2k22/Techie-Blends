@@ -20,10 +20,13 @@ const Home = () => {
       if (data.error) {
         console.log(data.message);
       } else {
-        setBlog(data.data);
+        console.log(data, "ll");
+        setBlog(data);
       }
     });
   }
+
+  console.log(blog);
   useEffect(() => {
     fetchAllBlogs();
   }, []);
@@ -42,7 +45,7 @@ const Home = () => {
             </div>
             <div className={styles.container}>
               <div className={styles.textbox}>
-                <h4>Welcome to Calm Blends</h4>
+                <h4>Welcome to HealingYou</h4>
                 <h1>
                   Just <span>Breathe</span>
                   <br /> And <span>Relax...</span>
@@ -83,17 +86,19 @@ const Home = () => {
               <h3>Curated and Brewed Over Coffee!</h3>
               <div className={styles.textwidget}>
                 <p>
-                  Immerse yourself in our posts and be swept away to a world
-                  that is separate from yours.
+                  Immerse yourself in our posts and be swept away to a world that is separate from
+                  yours.
                   <br />
-                  Thus, unraveling from all the dilemmas, stress & problems you
-                  might have.
+                  Thus, unraveling from all the dilemmas, stress & problems you might have.
                 </p>
               </div>
             </div>
             <div className={styles.bloggrid}>
               {blog &&
                 blog.map((data, index) => {
+                  if (index >= 6) {
+                    return null;
+                  }
                   return (
                     <div key={index} className={styles.blogwrapper}>
                       <BlogBox blog={data} />
@@ -102,7 +107,7 @@ const Home = () => {
                 })}
             </div>
             <div className={styles.readmore}>
-              <a href="/blogs">View All</a>
+              <a href="/blog/blog">View All</a>
             </div>
           </div>
         </div>
@@ -116,11 +121,10 @@ const Home = () => {
               <h3 class="heading-title">Words By Others(Stories)</h3>
               <div className={styles.textwidget}>
                 <p>
-                  Sharing is caring! Encourage and inspire others with your
-                  stories. Your experiences can give them the
+                  Sharing is caring! Encourage and inspire others with your stories. Your
+                  experiences can give them the
                   <br />
-                  courage to face their fears, overcome their struggles, and
-                  come out stronger.
+                  courage to face their fears, overcome their struggles, and come out stronger.
                 </p>
               </div>
             </div>
@@ -179,12 +183,10 @@ const Home = () => {
               <h3 className={styles.heading_title}> We Are Here For You! </h3>
               <p>
                 {" "}
-                A self-improvement project with a focus on Personal
-                Productivity, Motivation & Self Education. The goal is to create
-                an environment of mutual support, where people can meet from all
-                across the globe to solve problems related to anxiety,
-                depression, negative thinking, stress, moodiness & <br /> other
-                mental illness.{" "}
+                A self-improvement project with a focus on Personal Productivity, Motivation & Self
+                Education. The goal is to create an environment of mutual support, where people can
+                meet from all across the globe to solve problems related to anxiety, depression,
+                negative thinking, stress, moodiness & <br /> other mental illness.{" "}
               </p>
             </div>
           </div>

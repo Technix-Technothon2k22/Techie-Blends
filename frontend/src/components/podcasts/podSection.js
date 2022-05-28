@@ -77,7 +77,9 @@ const PodSection = ({ match }) => {
                 <span className={styles.share}>
                   <span style={{ color: "gray" }}>Share</span> : &nbsp; &nbsp;
                   <div className={styles.icons}>
-                    <a href={blogs.link}>{blogs.link}</a>
+                    <a href={blogs.link} target="_blank">
+                      {blogs.link}
+                    </a>
                   </div>
                 </span>
               </div>
@@ -93,18 +95,15 @@ const PodSection = ({ match }) => {
                       className={styles.dp}
                     />
                     <p>
-                      <h3 className={styles.authboi}>{blogs.advisor.name}</h3>I
-                      am an English literature (major) and psychology (minor)
-                      graduate from St. Bede’s College, Shimla. Postgraduate in
-                      Clinical psychology from IIS University, Jaipur. She has
-                      published a Research paper on Music therapy in the
-                      military population and Workplace stress in a national
-                      seminar conducted by Fortis hospital (gurugram) and
-                      international seminar conducted by St. Bede’s College,
-                      Shimla, Respectively. Authored a dissertation work on
-                      ‘effect of social media addiction on the mental and
-                      physical well-being in adolescents’ Currently working at
-                      calm sage as a writer
+                      <h3 className={styles.authboi}>{blogs.advisor.name}</h3>I am an English
+                      literature (major) and psychology (minor) graduate from St. Bede’s College,
+                      Shimla. Postgraduate in Clinical psychology from IIS University, Jaipur. She
+                      has published a Research paper on Music therapy in the military population and
+                      Workplace stress in a national seminar conducted by Fortis hospital (gurugram)
+                      and international seminar conducted by St. Bede’s College, Shimla,
+                      Respectively. Authored a dissertation work on ‘effect of social media
+                      addiction on the mental and physical well-being in adolescents’ Currently
+                      working at calm sage as a writer
                     </p>
                   </div>
                 </div>
@@ -116,11 +115,7 @@ const PodSection = ({ match }) => {
               <h4 className={styles.read}>LATEST READ</h4>
               {blog.reverse().map((data) => (
                 <div className={styles.smallC}>
-                  <img
-                    src={data.image[0].url}
-                    alt=""
-                    className={styles.dtimg}
-                  />
+                  <img src={data.image[0].url} alt="" className={styles.dtimg} />
                   <span>
                     <h4>{data.title}</h4>
                   </span>
