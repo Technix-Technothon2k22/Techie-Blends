@@ -1,0 +1,134 @@
+.header {
+  z-index: 5;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.topbar {
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+}
+
+.navigation {
+  width: 80%;
+  margin: 2% 10% 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.navigationoption {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.navigationoption a {
+  padding: 0 0 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+
+.navigationoption:hover a {
+  color: #d56603;
+}
+
+.navigationoption:hover a::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navigationoption a::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 100%;
+  background: #d56603;
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+  transition: all ease 0.3s;
+  transform: translateY(10px);
+  margin-top: 6px;
+}
+
+.userlist {
+  position: absolute;
+  z-index: 3;
+  width: 200%;
+  padding-top: 10px;
+  display: none;
+  transform: translate(-25%, 0);
+}
+
+.navigationoption:hover .userlist .droppeduserlist {
+  background: white;
+  border-radius: 3px;
+  border: 1px solid #d56603;
+}
+
+.navigationoption:hover .userlist {
+  display: block;
+}
+
+.name {
+  color: #d56603;
+}
+
+.arrowbottom {
+  border: solid #d56603;
+  margin-left: 5px;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 2px 2px;
+  margin-bottom: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transition: all 0.2s ease-in;
+}
+
+.arrowbottom:hover {
+  transform: rotate(225deg);
+}
+
+.navigationoption:hover .name .arrowbottom {
+  transform: rotate(225deg);
+}
+
+.dropuparrow {
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid white;
+}
+
+.userlist ul {
+  padding: 0;
+  margin: 0;
+}
+
+.userlist ul li {
+  border-top: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.userlist ul li a {
+  width: 100%;
+  width: 100%;
+  text-align: center;
+}

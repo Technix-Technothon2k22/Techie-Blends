@@ -1,0 +1,425 @@
+.create {
+  width: 100%;
+  position: relative;
+}
+
+.sec1 {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+}
+.image img {
+  max-height: 500px;
+  width: 100%;
+}
+.text1 {
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.text1 span {
+  font-size: 70px;
+  font-weight: 700;
+}
+.sec2 .head {
+  padding: 6% 0 3% 0;
+  text-align: center;
+}
+.sec2 .head span {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.sec2 .head2 {
+  padding: 0 10% 3% 10%;
+  text-align: center;
+}
+.sec2 .head2 span {
+  font-size: 20px;
+  font-weight: 500;
+}
+.sec3 .writebox {
+  width: 50%;
+}
+.sec3 {
+  display: flex;
+  justify-content: center;
+}
+
+.sec3 .blog3 {
+  margin: 3% 0;
+}
+.sec3 .blog3 button {
+  width: 100%;
+  background: #baf0f7;
+  color: #253237;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+
+  font-size: 18px;
+  font-weight: 600;
+  height: 0.5in;
+}
+.img {
+  width: 300px;
+  height: 150px;
+}
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 3%;
+}
+
+.blogwrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.tagtext {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0% 2%;
+}
+
+.topdiv {
+  background: #fff5ee;
+  border-radius: 10% 0 0 0;
+  padding: 3%;
+}
+
+.quicksearch_section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 0 70px;
+  position: relative;
+}
+
+.quicksearch_section ul {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quicksearch_section ul li {
+  display: inline-block;
+  padding: 0 15px;
+  margin: 1% 1%;
+}
+
+.quicksearch_section ul li button {
+  display: block;
+  text-transform: capitalize;
+  padding: 0 40px;
+  color: #000;
+  border-radius: 25px;
+  border: 2px solid #d56603;
+  height: 50px;
+  line-height: 46px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all ease 0.3s;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.quicksearch_section ul li button:hover {
+  background-color: #d56603;
+  color: white;
+}
+
+.cats {
+  display: inline;
+  padding: 10px 20px;
+  color: #000;
+  border-radius: 25px;
+  border: 2px solid #d56603;
+  height: 50px;
+  line-height: 46px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all ease 0.3s;
+  text-decoration: none;
+  background-color: transparent;
+  text-transform: capitalize;
+}
+
+.cats:hover {
+  background-color: #d56603;
+  color: white;
+  cursor: pointer;
+}
+
+.mainContainer {
+  display: flex;
+  margin: 0 2%;
+}
+
+.first {
+  width: 66%;
+  padding: 3% 2%;
+}
+
+.heading1 {
+  text-align: start;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.authdetails > span {
+  font-size: 21px;
+  font-weight: 700;
+}
+.authdetails > span:hover {
+  text-decoration: underline;
+  transition: all 1.5s ease-in;
+}
+
+.authdetails {
+  font-size: 21px;
+  padding: 10px;
+}
+
+.content > p {
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.headline {
+  font-size: 24px;
+}
+
+.shareContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+}
+
+.share {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.share > * {
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.likeContainer {
+  display: flex;
+  align-items: center;
+}
+
+.likeContainer > * {
+  margin-right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.icons > * {
+  margin-right: 20px;
+}
+
+.authContainer {
+  background: #f8f9fa;
+
+  padding: 3%;
+  margin-top: 20px;
+}
+
+.authContainer > h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.dp {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.dpcontainer {
+  display: flex;
+  align-items: center;
+}
+
+.dpcontainer > p {
+  padding: 2%;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.authboi {
+  color: #d56603;
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+.read {
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  background: #ffb500;
+  border-radius: 10px 10px 0 0;
+  margin: 0;
+}
+
+
+.latest {
+  width: 300px;
+  border: 1px solid orange;
+  border-bottom: none;
+  border-radius: 10px;
+}
+
+.reviewCont {
+  width: 300px;
+  border: 1px solid orange;
+  border-bottom: none;
+  border-radius: 10px;
+}
+
+.review {
+  max-height: 600px;
+  overflow-y: scroll;
+}
+.review::-webkit-scrollbar {
+  width: 0;
+}
+.read {
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  background: #ffb500;
+  border-radius: 10px 10px 0 0;
+}
+
+.dtimg {
+  width: 100px;
+  padding: 2%;
+  border-radius: 25px;
+}
+
+.right {
+  padding: 3% 2%;
+  margin-top: 4%;
+}
+
+.smallC {
+  display: flex;
+  align-items: center;
+  background: #fdf5e0;
+  padding: 10px;
+  border-bottom: 2px solid white;
+}
+
+.right > * {
+  margin: 4% 0;
+}
+
+.smallC {
+  display: flex;
+  align-items: center;
+  background: #fdf5e0;
+  padding: 10px;
+  border-bottom: 2px solid white;
+}
+
+.commentContainer {
+  background: #fff4ee;
+  padding: 3%;
+  margin: 2% 0;
+  border-radius: 20px;
+}
+
+.comment {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.blogshit img {
+  width: 100%;
+  max-height: 400px;
+}
+.comment > label {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.textarea {
+  resize: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.cmtBtn {
+  padding: 20px 10px;
+  background: orange;
+  color: white;
+  display: block;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.comment > label {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.textarea {
+  resize: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.cmtBtn {
+  padding: 20px 10px;
+  background: orange;
+  color: white;
+  display: block;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.userdp {
+  width: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+
+h3{
+  margin: 0;
+  padding: 0;
+}

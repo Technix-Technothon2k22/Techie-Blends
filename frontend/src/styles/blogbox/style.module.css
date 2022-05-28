@@ -1,0 +1,204 @@
+.blogbox {
+  width: 100%;
+}
+
+.blogBox {
+  height: 400px;
+  width: 350px;
+  background-color: rgb(255, 249, 249);
+  padding: 2%;
+  border-radius: 5%;
+}
+
+.imageblock {
+  position: relative;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.imageblock a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.imageblock img {
+  width: 100%;
+  height: 300px;
+}
+
+.imgBlock {
+  width: 350px;
+  height: 150px;
+}
+
+.imgBlock .img {
+  width: 100%;
+  height: 100%;
+}
+
+.postimage {
+  background: #fff;
+  padding: 1rem 1.5rem 1.5rem;
+  border-radius: 0 0 5px 5px;
+}
+
+.postmeta {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.postmeta p {
+  color: #5a5858;
+  margin: 0;
+}
+
+.postcontent {
+  display: flex;
+  align-items: center;
+}
+
+.postContent {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.postcontent title {
+  width: 66%;
+}
+
+.postContainer {
+  display: flex;
+  justify-items: start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.postcontent h4 {
+  line-height: normal;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  margin: 0.5rem 0;
+  -webkit-line-clamp: 2;
+  font-size: 1.2rem;
+}
+
+.postcontent h4 a {
+  color: #000;
+  background-image: linear-gradient(
+    to right,
+    currentColor 0%,
+    currentColor 100%
+  );
+  background-size: 0px 2px;
+  background-position: 0px 95%;
+  transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+  background-repeat: no-repeat;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.postcontent h4 a:hover {
+  background-size: 100% 2px;
+  text-decoration: none;
+}
+
+.postcontent .button {
+  width: 34%;
+  text-align: right;
+}
+
+.postcontent .button a {
+  color: #000;
+  border-radius: 25px;
+  height: 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: inline-block;
+  line-height: 39px;
+  padding: 0 22px;
+  border: 1px solid #d56603;
+  font-size: 0.9rem;
+  transition: all ease 0.3s;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.postcontent .button a:hover {
+  color: white;
+  background: #d56603;
+}
+
+.postContent title {
+  width: 66%;
+}
+
+.postContainer {
+  display: flex;
+  justify-items: start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.postContent h4 {
+  line-height: normal;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  margin: 0.5rem 0;
+  -webkit-line-clamp: 2;
+  font-size: 1.2rem;
+}
+
+.postContent h4 a {
+  color: #000;
+  background-image: linear-gradient(
+    to right,
+    currentColor 0%,
+    currentColor 100%
+  );
+  background-size: 0px 2px;
+  background-position: 0px 95%;
+  transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+  background-repeat: no-repeat;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.postContent h4 a:hover {
+  background-size: 100% 2px;
+  text-decoration: none;
+}
+
+.postContent .button {
+  width: 34%;
+  text-align: right;
+}
+
+.postContent .button a {
+  color: #000;
+  border-radius: 25px;
+  height: 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: inline-block;
+  line-height: 39px;
+  padding: 0 22px;
+  border: 1px solid #d56603;
+  font-size: 0.9rem;
+  transition: all ease 0.3s;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.postContent .button a:hover {
+  color: white;
+  background: #d56603;
+}

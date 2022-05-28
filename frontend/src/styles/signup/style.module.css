@@ -1,0 +1,265 @@
+.signup .signupup {
+  padding: 3% 3% 0;
+  background: white;
+}
+
+.signup .signupup .heading {
+  text-align: center;
+  margin: 0% 25% 6%;
+}
+
+.signup .signupup .heading > span {
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #253237;
+  font-weight: 700;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.15), 0 0 2px rgba(0, 0, 0, 0.15);
+}
+
+.signup .signupup .upcontent {
+  display: block;
+  box-shadow: 0px 0px 12px rgb(0 0 0 / 20%);
+  margin: 0 25%;
+  padding: 1.5% 12%;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  background: white;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.signup .signupup .upcontent span.text {
+  display: inline-block;
+  width: 100%;
+  font-size: 24px;
+  color: black;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin: 1% 0;
+}
+
+.signup .signupup .upcontent span.link {
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  color: black;
+  margin: 1% 0;
+}
+
+.signup .signupup .upcontent span.link > a {
+  color: #730dc9;
+}
+
+.signup .signupdown {
+  background: rgb(209,162,67);
+background: linear-gradient(90deg, rgba(209,162,67,0.6281863087031687) 44%, rgba(245,234,114,1) 100%);
+  padding: 0 3% 17%;
+}
+
+.signup .signupdown .downcontent {
+  margin: 0 25%;
+  text-align: center;
+  background: white;
+  padding: 3% 12% 1.5%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.signup .signupdown legend {
+  float: none;
+}
+
+.signup .signupdown .MuiTextField-root {
+  margin: 3% 0;
+  width: 100%;
+}
+
+.signup .signupdown .MuiInputLabel-root.Mui-focused {
+  color: #730dc9;
+}
+
+.signup .signupdown .Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #730dc9 !important;
+}
+
+.signup .signupdown .name {
+  display: flex;
+  width: 100%;
+  margin: 1.5% 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.signup .signupdown .name .nameinput {
+  width: 48%;
+}
+
+.signup .signupdown .dob {
+  text-align: left;
+  margin: 1.5% 0;
+}
+
+.signup .signupdown .dob > span {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 1.5% 0;
+}
+
+.signup .signupdown .dob .dobselect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3% 0;
+}
+
+.signup .signupdown .dob .dobselect .monthselect {
+  width: 45%;
+  height: 0.4in;
+  margin: 1.5% 0;
+}
+
+.signup .signupdown .dob .dobselect .select {
+  width: 25%;
+  height: 0.4in;
+}
+
+.signup .signupdown .dob .dobselect .monthselect select,
+.signup .signupdown .dob .dobselect .select select {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+}
+
+.signup .signupdown .dob .dobselect .monthselect select:hover,
+.signup .signupdown .dob .dobselect .select select:hover {
+  border-color: black;
+}
+
+.signup .signupdown .dob .dobselect .monthselect select:focus,
+.signup .signupdown .dob .dobselect .monthselect select:active,
+.signup .signupdown .dob .dobselect .select select:focus,
+.signup .signupdown .dob .dobselect .select select:active,
+.signup .signupdown .dob .dobselect .monthselect option:focus,
+.signup .signupdown .dob .dobselect .monthselect option:active,
+.signup .signupdown .dob .dobselect .select option:focus,
+.signup .signupdown .dob .dobselect .select option:active {
+  border: 2px solid #730dc9;
+  outline-color: #730dc9;
+  box-sizing: border-box;
+}
+
+.signup .signupdown .button {
+  width: 90%;
+  margin: 6% auto;
+}
+
+.signup .signupdown .button button {
+  width: 100%;
+  background: rgb(209,162,67);
+background: linear-gradient(90deg, rgba(209,162,67,0.6281863087031687) 44%, rgba(245,234,114,1) 100%);
+  color: #253237;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 2% 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.button1 button{
+  display: inline;
+  padding: 10px 40px;
+  color: black;
+  border-radius: 20px;
+  background: rgb(245, 180, 50);
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.signup .signupdown .optiontext {
+  font-size: 12px;
+  margin: 1.5% 0;
+}
+
+.signup .signupdown .socialsignup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3% 0;
+}
+
+.signup .signupdown .socialsignup .socialsignupbutton {
+  width: 40px;
+  height: 40px;
+  margin: 0 3%;
+}
+
+.signup .signupdown .socialsignup .socialsignupbutton > button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #dfe0e1;
+}
+
+.signup .signupdown .socialsignup .socialsignupbutton > button img {
+  width: 50%;
+  height: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+  .signup .signupup {
+    padding: 6% 3% 0;
+  }
+
+  .signup .signupup .heading {
+    margin: 0 0 6%;
+  }
+
+  .signup .signupup .heading > span {
+    font-size: 20px;
+    letter-spacing: normal;
+  }
+
+  .signup .signupup .upcontent {
+    margin: 0;
+    padding: 3% 0;
+  }
+
+  .signup .signupdown {
+    padding: 0 3% 40%;
+  }
+
+  .signup .signupdown .downcontent {
+    margin: 0;
+    padding: 9% 6%;
+  }
+
+  .signup .signupdown .button {
+    width: 100%;
+  }
+}
+
+
+
+/* otp css */
+
+
+.maindiv{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 3% 0;
+  font-size: 30px;
+}
