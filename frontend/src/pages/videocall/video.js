@@ -30,12 +30,10 @@ function Video() {
   console.log(me);
 
   useEffect(() => {
-    navigator.mediaDevices
-      .getUserMedia({ video: true, audio: true })
-      .then((stream) => {
-        setStream(stream);
-        myVideo.current.srcObject = stream;
-      });
+    navigator.mediaDevices.getUserMedia({ video: true, audio: true }).then((stream) => {
+      setStream(stream);
+      myVideo.current.srcObject = stream;
+    });
 
     socket.on("me", (id) => {
       setMe(id);
@@ -99,7 +97,7 @@ function Video() {
 
   return (
     <>
-      <Header />
+      <Header active={"video"} />
       <h1 style={{ textAlign: "center", color: "#fff" }}>Zoomish</h1>
       <div className="container">
         <div className="video-container">
@@ -115,9 +113,7 @@ function Video() {
               />
             )}
 
-            {isAuthenticated() && (
-              <p className="myname">{isAuthenticated().name}</p>
-            )}
+            {isAuthenticated() && <p className="myname">{isAuthenticated().name}</p>}
           </div>
           <div className="video">
             {callAccepted && !callEnded ? (
@@ -164,11 +160,7 @@ function Video() {
                 End Call
               </Button>
             ) : (
-              <IconButton
-                color="primary"
-                aria-label="call"
-                onClick={() => callUser(idToCall)}
-              >
+              <IconButton color="primary" aria-label="call" onClick={() => callUser(idToCall)}>
                 <PhoneIcon fontSize="large" />
               </IconButton>
             )}

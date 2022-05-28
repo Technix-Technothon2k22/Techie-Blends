@@ -32,7 +32,7 @@ const CreatePod = () => {
     formData.append("image", image.profileimage[0]);
     formData.append("title", blog.title);
 
-    formData.append("advisor", "6290b42c7105f951e4eafbe5");
+    formData.append("advisor", isAuthenticated().id);
     formData.append("link", blog.link);
 
     CreatePodCast(formData).then((data) => {

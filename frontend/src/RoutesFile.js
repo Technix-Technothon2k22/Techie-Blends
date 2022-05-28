@@ -27,7 +27,7 @@ const RoutesFile = () => {
         <Route path="/professionalonboarding" element={<AdvisorForm />} />
         <Route path="/createblog" exact element={<Createblog />} />
         <Route path="/createpod" exact element={<CreatePod />} />
-        <Route path="/blog/:id" exact element={<BlogSection />} />
+        <Route path="/blogs/:id" exact element={<BlogSection />} />
         <Route
           path="/chat"
           exact
@@ -39,7 +39,7 @@ const RoutesFile = () => {
         />{" "}
         <Route path="/podcast/:id" exact element={<PodSection />} />
         <Route path="/wait" exact element={<Wait />} />
-        <Route path="/blog" exact element={<Blog />} />
+        <Route path="/blog/:typeofblog" exact element={<Blog />} />
         <Route path="/podcasts" exact element={<ShowPods />} />
         <Route path="/video" exact element={<Video />} />
         <Route path="/details" exact element={<UserForm />} />

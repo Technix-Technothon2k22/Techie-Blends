@@ -90,7 +90,7 @@ const AdvisorForm = () => {
       <div className={styles.signup}>
         <div className={styles.signupup}>
           <div className={styles.heading}>
-            <span>Welcome to Calm-A-Sutra</span>
+            <span>Welcome to HealingYou</span>
           </div>
           <div className={styles.upcontent}>
             <span className={styles.text}>Please Fill the Psychiatrist Onboarding Form</span>

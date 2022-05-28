@@ -8,11 +8,7 @@ const BlogCard = ({ blog }) => {
       <div>
         <div className={styles.imgBlock}>
           <a href={blog.link}>
-            <img
-              src={blog.image[0].url}
-              alt="blogimage"
-              className={styles.img}
-            />
+            <img src={blog.image[0].url} alt="blogimage" className={styles.img} />
           </a>
         </div>
         <div className={styles.postContainer}>
@@ -26,13 +22,10 @@ const BlogCard = ({ blog }) => {
               </h4>
             </div>
             <div>
-              <p>
-                It has never been easy to accept all your emotions, especially
-                emotions...
-              </p>
+              <p>It has never been easy to accept all your emotions, especially emotions...</p>
             </div>
             <div className={styles.button}>
-              <a href={`/blog/${blog._id}`}>Read More</a>
+              <a href={`/blogs/${blog._id}`}>Read More</a>
             </div>
           </div>
         </div>

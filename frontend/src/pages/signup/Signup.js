@@ -138,7 +138,7 @@ const Signup = () => {
       <div className={styles.signup}>
         <div className={styles.signupup}>
           <div className={styles.heading}>
-            <span>Welcome to Calm-A-Sutra</span>
+            <span>Welcome to HealingYou</span>
           </div>
           <div className={styles.upcontent}>
             <span className={styles.text}>Create your account</span>
@@ -231,7 +231,7 @@ const Signup = () => {
 
   return (
     <div>
-      <Header />
+      <Header active={"signup"} />
       {SignupPage()}
       <Footer />
     </div>

@@ -5,10 +5,12 @@ import styles from "../../styles/blog/style.module.css";
 
 import { getAllBlogs } from "../../helper/BlogApiCalls/index";
 import { categories } from "../../helper/Category/category";
+import { useParams } from "react-router-dom";
 const Blog = () => {
+  const params = useParams();
   const [blogs, setBlogs] = useState([]);
   const [myFilters, setMyFilters] = useState({
-    filters: { category: [] },
+    filters: { category: [], type: params.typeofblog },
   });
   const [busy, setBusy] = useState(true);
   const handleFilters = (name, filterBy) => {
@@ -63,9 +65,8 @@ const Blog = () => {
             {" "}
             <h1 className={styles.heading}>Blogs</h1>
             <p className={styles.tagtext}>
-              With our well-researched and educational posts explore solutions
-              to your various mental, emotional, spiritual health problems, and
-              much more!
+              With our well-researched and educational posts explore solutions to your various
+              mental, emotional, spiritual health problems, and much more!
             </p>
           </div>
           <section>
@@ -73,10 +74,7 @@ const Blog = () => {
               <ul>
                 {categories.map((category, inde) => {
                   return (
-                    <li
-                      onClick={() => handleFilters(category, "category")}
-                      key={inde}
-                    >
+                    <li onClick={() => handleFilters(category, "category")} key={inde}>
                       <button style={selected(category)}>{category}</button>
                     </li>
                   );

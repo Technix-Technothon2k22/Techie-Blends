@@ -47,13 +47,10 @@ const Createblog = () => {
     formData.append("image", image.profileimage[0]);
     formData.append("title", blog.title);
     formData.append("description", blog.description);
-    formData.append("advisor", isAuthenticated());
+    formData.append("advisor", isAuthenticated().id);
     formData.append("category", age);
     formData.append("date", date.toString().substring(0, 15));
-    formData.append(
-      "type",
-      isAuthenticated().role === "advisor" ? "blog" : "story"
-    );
+    formData.append("type", isAuthenticated().role === "advisor" ? "blog" : "story");
 
     createBlog(formData).then((data) => {
       if (data.error) {
@@ -75,9 +72,7 @@ const Createblog = () => {
       url: "http://localhost:5000/api/v1/user/verified",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${JSON.parse(
-          localStorage.getItem("_access_token")
-        )}`,
+        Authorization: `Bearer ${JSON.parse(localStorage.getItem("_access_token"))}`,
       },
     };
 
@@ -111,17 +106,15 @@ const Createblog = () => {
           <div className={styles.head2}>
             {isAuthenticated().role === "advisor" ? (
               <span>
-                With our well-researched and educational posts explore solutions
-                to your various mental, emotional, spiritual health problems,
-                and much more!
+                With our well-researched and educational posts explore solutions to your various
+                mental, emotional, spiritual health problems, and much more!
               </span>
             ) : (
               <span>
                 {" "}
-                It is possible to overcome the mental health problems, all it
-                takes is a little willpower and some help. Share your stories of
-                recovery & inspire people in overcoming their struggles of
-                various kinds.
+                It is possible to overcome the mental health problems, all it takes is a little
+                willpower and some help. Share your stories of recovery & inspire people in
+                overcoming their struggles of various kinds.
               </span>
             )}
             <span></span>
@@ -152,9 +145,7 @@ const Createblog = () => {
             <div className={styles.blog3}>
               <Box sx={{ minWidth: 120 }}>
                 <FormControl fullWidth>
-                  <InputLabel id="demo-simple-select-label">
-                    Category
-                  </InputLabel>
+                  <InputLabel id="demo-simple-select-label">Category</InputLabel>
                   <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
@@ -163,9 +154,7 @@ const Createblog = () => {
                     onChange={handleChange}
                   >
                     {categories.map((hey, index) => {
-                      return (
-                        <MenuItem value={hey}>{hey.toUpperCase()}</MenuItem>
-                      );
+                      return <MenuItem value={hey}>{hey.toUpperCase()}</MenuItem>;
                     })}
                   </Select>
                 </FormControl>

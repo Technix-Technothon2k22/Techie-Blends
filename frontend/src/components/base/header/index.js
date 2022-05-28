@@ -29,37 +29,43 @@ const Header = ({ active }) => {
             </a>
           </div>
           <div className={styles.navigationoption}>
-            <a style={returnColor("blog")} href="/blog">
+            <a style={returnColor("blog")} href="/blog/blog">
               Blogs
             </a>
           </div>
           <div className={styles.navigationoption}>
-            <a style={returnColor("stories")} href="/">
+            <a style={returnColor("stories")} href="/blog/story">
               Stories
             </a>
           </div>
           <div className={styles.navigationoption}>
-            <a style={returnColor("write")} href="/">
-              Write a Story
+            <a style={returnColor("write")} href="/createblog">
+              Write a{" "}
+              {isAuthenticated() && <> {isAuthenticated().role === "user" ? "Story" : "Blog"}</>}
+              {!isAuthenticated() && "Something"}
             </a>
           </div>
           <div className={styles.navigationoption}>
-            <a style={returnColor("self")} href="/">
-              Self Care
+            <a style={returnColor("video")} href="/video">
+              Video Call
             </a>
           </div>
+
           <div className={styles.navigationoption}>
             <a style={returnColor("podcast")} href="/podcasts">
               Podcast
             </a>
           </div>
           <div className={styles.navigationoption}>
-            {!isAuthenticated() && <a href="/signin">Signin/Signup</a>}{" "}
+            {!isAuthenticated() && (
+              <a style={returnColor("signup")} href="/signin">
+                Signin/Signup
+              </a>
+            )}{" "}
             {isAuthenticated() && (
               <>
                 <div className={styles.name}>
-                  {isAuthenticated().name.toUpperCase()}{" "}
-                  <i className={styles.arrowbottom}></i>
+                  {isAuthenticated().name.toUpperCase()} <i className={styles.arrowbottom}></i>
                 </div>
                 <div className={styles.userlist}>
                   <div className={styles.dropuparrow}></div>
@@ -70,9 +76,15 @@ const Header = ({ active }) => {
                           <a href="/createblog">Create a Blog</a>
                         </li>
                       )}
+                      {isAuthenticated().role === "advisor" && (
+                        <li>
+                          <a href="/createpod">Create a Podcast</a>
+                        </li>
+                      )}
                       <li>
-                        <a href="/">Chats</a>
+                        <a href="/chat">Chats</a>
                       </li>
+
                       <li
                         onClick={() => {
                           signout(() => {

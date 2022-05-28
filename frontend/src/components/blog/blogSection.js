@@ -107,7 +107,7 @@ const BlogSection = () => {
 
   return (
     <div>
-      <Header />
+      <Header active={"blog"} />
       {isBusy ? (
         <div>hey</div>
       ) : (

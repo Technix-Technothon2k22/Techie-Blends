@@ -21,7 +21,7 @@ const ShowPods = () => {
   }, []);
   return (
     <main>
-      <Header />
+      <Header active={"podcast"} />
       <section className={styles.topdiv}>
         <div>
           {" "}

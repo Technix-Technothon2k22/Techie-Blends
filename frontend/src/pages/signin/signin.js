@@ -195,7 +195,7 @@ const Signin = () => {
       <div className={styles.signin}>
         <div className={styles.signinup}>
           <div className={styles.heading}>
-            <span>Welcome back to Calm-A-Sutra</span>
+            <span>Welcome back to HealingYou</span>
           </div>
           <div className={styles.upcontent}>
             <span className={styles.text}>Log In</span>
